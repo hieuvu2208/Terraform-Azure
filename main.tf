@@ -11,7 +11,11 @@ terraform {
     organization = "FIS-lab"
 
     workspaces {
-      name = "Terraform-Azure"
+      name = "Terraform-Azure-CLI"
+    }
+
+    workspaces {
+      name = "Terraform-Azure-VCS"
     }
   }
 }
