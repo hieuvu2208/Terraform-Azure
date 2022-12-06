@@ -49,8 +49,6 @@ locals {
     prod_vm2 = { name_rg = "prod", name_nsg = "prod_vm2", name = "All", priority = 100, direction = "Inbound", access = "Allow", protocol = "Tcp", source_port_range = "*", destination_port_range = "*", source_address_prefix = "*", destination_address_prefix = "*"}
   }
   network_interface = {
-
-    
     dev_vm1  = { name = "dev_vm1_nic" , name_rg = "dev" , name_ipconfig = "dev_vm1_ipconfig" , name_subnet = "dev" , private_ip_address_allocation = "Dynamic" }
     dev_vm2  = { name = "dev_vm2_nic" , name_rg = "dev" , name_ipconfig = "dev_vm2_ipconfig" , name_subnet = "dev" , private_ip_address_allocation = "Dynamic" }
     ############################################################################################################################################################
